@@ -67,3 +67,15 @@ alias privkey="cat ~/.ssh/id_rsa"
 # ==============================================================================
 
 alias sourcebash="source ~/.bashrc"   
+
+# ==============================================================================
+# Bash Aliases Useful 
+# ==============================================================================
+alias viewaliases='less ~/.bash_aliases' # View aliases in pager
+ 
+
+# Copy Bash Aliases to Desktop
+alias copyaliases='cp ~/.bash_aliases ~/Desktop/bash_aliases.txt'
+ 
+# Print Bash Aliases File.
+alias printaliases="lpr ~/.bash_aliases"
