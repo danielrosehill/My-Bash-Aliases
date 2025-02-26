@@ -1,0 +1,69 @@
+# ~/.bash_aliases
+ 
+# ==============================================================================
+# System and Package Management
+# ==============================================================================
+
+alias snapnow='sudo snapper -c root create --description "on-demand snapshot"'
+
+# Create on-demand snapper snapshots (requires root privileges)
+ 
+
+# ==============================================================================
+# Git Shortcuts
+# ==============================================================================
+
+alias gitpush='cd "$(git rev-parse --show-toplevel)" && git add . && git commit -m "updated" && git push'
+ 
+ # ==============================================================================
+# Python and Virtual Environments
+# ==============================================================================
+
+alias py='python3'   
+
+alias vca='python3 -m venv venv && source venv/bin/activate && if [ -f requirements.txt ]; then pip install -r requirements.txt; fi'
+
+ # ==============================================================================
+# Navigation Shortcuts
+# ==============================================================================
+
+# Adjust the paths to match your own directory structure.
+
+alias espanso="/home/daniel/Applications/Espanso.AppImage"
+alias repos="cd /home/daniel/Development/git-repositories/My-Repos"
+alias programs="cd /home/daniel/Programs"
+alias clonedrepos="cd /home/daniel/Development/git-repositories/Cloned-Repos"
+alias forks="cd /home/daniel/Development/git-repositories/My-Forks"
+alias Programs="cd /home/daniel/Programs" # Note: Case sensitive!  Might clash with "programs"
+alias appimages="cd /home/daniel/Applications"
+ 
+
+# Change directory to yadm repo (yadm = Yet Another Dotfiles Manager)
+alias cdyadm='cd ~/.local/share/yadm/repo.git'
+
+# ==============================================================================
+# Editor and Configuration
+# ==============================================================================
+
+alias edit-aliases="nano /home/daniel/.bash_aliases" # Edit this file itself
+alias espansoconfig="nano /home/daniel/.config/espanso/config/default.yml" # Edit espanso config
+ 
+# ==============================================================================
+# AI Tools
+# ==============================================================================
+
+alias aideror="aider --model openrouter/anthropic/claude-3.7-sonnet" # Run aider with specific model
+
+ 
+# ==============================================================================
+# Show SSH Keys
+# ==============================================================================
+
+alias pubkey="cat ~/.ssh/id_rsa.pub"  
+alias privkey="cat ~/.ssh/id_rsa" 
+ 
+# ==============================================================================
+# Shell Configuration
+# ==============================================================================
+
+alias sourcebash="source ~/.bashrc"   
